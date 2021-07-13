@@ -10,10 +10,6 @@ const UserValidator = require('./src/validators/UserValidator');
 //middlewares
 const Auth = require('./src/middlewares/Auth')
 
-router.get('/ping', (req,res) => {
-    res.json({pong: true});
-});
-
 
 router.post('/user/signup',UserValidator.signup, UserController.signup);
 router.post('/user/signin',UserValidator.signin, UserController.signin);
