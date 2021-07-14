@@ -5,6 +5,7 @@ API HOSPEDADA NA VERCEL.
 LINK: https://api-node-black.vercel.app/
 
 ROTAS: 
+
 rotas usadas par fazer as requisições:
 router.post('/user/signup',UserValidator.signup, UserController.signup);
 router.post('/user/signin',UserValidator.signin, UserController.signin);
