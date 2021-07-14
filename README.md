@@ -12,6 +12,8 @@ router.post('/user/signin',UserValidator.signin, UserController.signin);
 router.get('/user/info',Auth.private,UserController.info);
 router.put('/user/editAction',UserValidator.editAction, Auth.private, UserController.editAction);
 
+
+
 Criação da Api em Node.js
 
 Tecnologias usadas na criação da api: node.js, Mongoose, Express e banco de dados MongoDB.
