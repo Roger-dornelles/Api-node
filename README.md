@@ -1,6 +1,7 @@
 # Api-node  ( EM DESENVOLVIMENTO :-) );
 
-API HOSPEDADA NA VERCEL 
+API HOSPEDADA NA VERCEL.
+
 LINK: https://api-node-black.vercel.app/
 
 ROTAS: 
