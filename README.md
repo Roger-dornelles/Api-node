@@ -1,5 +1,10 @@
 # Api-node  ( EM DESENVOLVIMENTO :-) );
 
+API HOSPEDADA NA VERCEL 
+LINK: https://api-node-black.vercel.app/
+
+ROTAS: 
+
 Criação da Api em Node.js
 
 Tecnologias usadas na criação da api: node.js, Mongoose, Express e banco de dados MongoDB.
