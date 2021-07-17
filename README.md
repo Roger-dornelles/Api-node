@@ -4,6 +4,12 @@ API HOSPEDADA NA VERCEL.
 
 LINK: https://api-node-black.vercel.app/
 
+PARA TESTE DA API FOI USADO O Rest test test.
+
+LINK:
+
+https://resttesttest.com/
+
 ROTAS: 
 
 rotas usadas par fazer as requisições:
