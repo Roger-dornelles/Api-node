@@ -1,9 +1,5 @@
 # Api-node  ( EM DESENVOLVIMENTO :-) );
 
-API HOSPEDADA NA VERCEL.
-
-LINK: https://api-node-black.vercel.app/
-
 Para teste da api em desenvolvimento foi usado o Rest test test.
 
 LINK:
