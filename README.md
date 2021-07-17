@@ -4,7 +4,7 @@ API HOSPEDADA NA VERCEL.
 
 LINK: https://api-node-black.vercel.app/
 
-PARA TESTE DA API FOI USADO O Rest test test.
+Para teste da api em desenvolvimento foi usado o Rest test test.
 
 LINK:
 
