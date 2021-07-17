@@ -40,3 +40,8 @@ para verificação dos dados do usuario é visualisada atraves de um token.
 ALTERAÇÂO DOS DADOS DO USUARIO:
 
 a alteração dos dados do usuario é atraves de um token e a alterção dos dados são todos opcionais.
+
+
+OBS:
+Api criada para ser usada como back-end do clone do app nubank.
+Ainda não foi implementado esta api junto ao projeto APP-NUBANK.
