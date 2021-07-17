@@ -43,5 +43,6 @@ a alteração dos dados do usuario é atraves de um token e a alterção dos dad
 
 
 OBS:
+
 Api criada para ser usada como back-end do clone do app nubank.
 Ainda não foi implementado esta api junto ao projeto APP-NUBANK.
