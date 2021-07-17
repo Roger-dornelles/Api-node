@@ -8,13 +8,13 @@ ROTAS:
 
 rotas usadas par fazer as requisições:
 
-router.post('/user/signup',UserValidator.signup, UserController.signup);
+router.post('/user/signup');  //cadastro de usuario
 
-router.post('/user/signin',UserValidator.signin, UserController.signin);
+router.post('/user/signin');  // login do usuario
 
-router.get('/user/info',Auth.private,UserController.info);
+router.get('/user/info');   // buscar informações do usuario
 
-router.put('/user/editAction',UserValidator.editAction, Auth.private, UserController.editAction);
+router.put('/user/editAction');  // editar informações do usuario
 
 
 
