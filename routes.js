@@ -8,9 +8,13 @@ const UserController = require('./src/controllers/UserController');
 const UserValidator = require('./src/validators/UserValidator');
 
 //middlewares
-const Auth = require('./src/middlewares/Auth')
+const Auth = require('./src/middlewares/Auth');
 
 
+//rota de testes
+router.post('/ping',(req,res)=>{
+    res.json({pong:true});
+})
 router.post('/user/signup',UserValidator.signup, UserController.signup);
 router.post('/user/signin',UserValidator.signin, UserController.signin);
 router.get('/user/info',Auth.private,UserController.info);

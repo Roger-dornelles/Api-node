@@ -14,7 +14,7 @@ module.exports = {
         cpf:{
             notEmpty:true,
             isLength:{
-                options:{min:11,max:12}
+                options:{min:11}
             },
             errorMessage:'Cpf incorreto!'
         },
@@ -60,7 +60,7 @@ module.exports = {
         cpf:{
             optional:true,
             isLength:{
-                options:{min:11, max:12}
+                options:{min:11}
             },
             errorMessage:'Cpf invalido'
         },
