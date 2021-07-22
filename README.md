@@ -1,5 +1,9 @@
 # Api-node  ( EM DESENVOLVIMENTO :-) );
 
+hospedado Heroku:
+
+LINK Heroku:  https://back-end-2.herokuapp.com/
+
 Para teste da api em desenvolvimento foi usado o Rest test test.
 
 LINK:
@@ -9,6 +13,9 @@ https://resttesttest.com/
 ROTAS: 
 
 rotas usadas par fazer as requisições:
+
+ROTA DE TESTE:
+router.post('/pong')  // rota para  teste ( retorna => ping:true )
 
 router.post('/user/signup');  //cadastro de usuario
 
