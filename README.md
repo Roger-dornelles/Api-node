@@ -10,6 +10,9 @@ ROTAS:
 
 rotas usadas par fazer as requisições:
 
+ROTA DE TESTE:
+router.get('/pong')  // rota para  teste ( retorna => ping:true )
+
 router.post('/user/signup');  //cadastro de usuario
 
 router.post('/user/signin');  // login do usuario
