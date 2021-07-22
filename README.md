@@ -1,5 +1,9 @@
 # Api-node  ( EM DESENVOLVIMENTO :-) );
 
+hospedado Heroku:
+
+LINK Heroku:  https://back-end-2.herokuapp.com/
+
 Para teste da api em desenvolvimento foi usado o Rest test test.
 
 LINK:
