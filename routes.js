@@ -12,7 +12,7 @@ const Auth = require('./src/middlewares/Auth');
 
 
 //rota de testes
-router.post('/ping',(req,res)=>{
+router.get('/ping',(req,res)=>{
     res.json({pong:true});
 })
 router.post('/user/signup',UserValidator.signup, UserController.signup);
