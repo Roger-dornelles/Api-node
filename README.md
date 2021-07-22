@@ -15,7 +15,7 @@ ROTAS:
 rotas usadas par fazer as requisições:
 
 ROTA DE TESTE:
-router.post('/pong')  // rota para  teste ( retorna => ping:true )
+router.get('/pong')  // rota para  teste ( retorna => ping:true )
 
 router.post('/user/signup');  //cadastro de usuario
 
