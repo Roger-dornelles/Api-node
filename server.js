@@ -24,6 +24,6 @@ server.use(express.urlencoded({ extended: true}));
 server.use(express.static(__dirname + '/public'));
 server.use('/',routes);
 
-server.listen(process.env.PORT || 3000,()=>{
+server.listen(process.env.PORT,()=>{
     console.log('funcionando na ',process.env.BASE);
 });
