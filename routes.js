@@ -11,10 +11,11 @@ const UserValidator = require('./src/validators/UserValidator');
 const Auth = require('./src/middlewares/Auth');
 
 
-//rota de testes
+//rota de teste
 router.get('/ping',(req,res)=>{
     res.json('ola mundo');
-})
+});
+// rotas da API
 router.post('/user/signup',UserValidator.signup, UserController.signup);
 router.post('/user/signin',UserValidator.signin, UserController.signin);
 router.get('/user/info',Auth.private,UserController.info);

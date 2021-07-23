@@ -17,12 +17,7 @@ mongoose.connection.on('error',(error)=>{
 });
 
 const server = express();
-server.use(cors({
-    " origin " : " * " ,
-    " methods " : " GET, HEAD, PUT, PATCH, POST, DELETE " ,
-    " preflightContinue " : false ,
-    " optionsSuccessStatus " : 204 
- }));
+server.use(cors());
 server.use(express.json());
 server.use(express.urlencoded({ extended: true}));
 server.use(express.static(__dirname + '/public'));
