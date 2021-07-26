@@ -81,5 +81,13 @@ module.exports = {
         token:{
             notEmpty:true
         }
+    }),
+    consult:checkSchema({
+        cpf:{
+            isLength:{
+                options:{min:11}
+            },
+            errorMessage:'Cpf invalido'
+        }
     })
 }
