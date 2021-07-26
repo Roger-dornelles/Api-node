@@ -4,6 +4,7 @@ const { checkSchema } = require('express-validator');
 module.exports = {
     signup: checkSchema({
         name:{
+            optional: true,
             trim:true,
             notEmpty:true,
             isLength:{
