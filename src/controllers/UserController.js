@@ -128,6 +128,10 @@ module.exports = {
         if(user){
             res.json({error:'Cpf já cadastrado.'});
             return;
-        };
+        }
+        if(!user){
+
+           res.json({});
+        }
     }
 }
