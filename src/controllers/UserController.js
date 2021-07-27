@@ -123,15 +123,25 @@ module.exports = {
         }
  
         const data = matchedData(req);
+        
+        if(data.cpf){
 
-        const user = await User.findOne({cpf:data.cpf});
-        if(user){
-            res.json({error:'Cpf já cadastrado.'});
-            return;
+            const user = await User.findOne({cpf:data.cpf});
+            if(user){
+                res.json({error:'Cpf já cadastrado.'});
+                return;
+            }
         }
-        if(!user){
 
-           res.json({});
-        }
+        if(data.email){
+            const emailCheck = await User.findOne({email:data.email});
+            if(emailCheck){
+                res.json({error:'E-mail já cadastrado.'});
+                return;
+            }
+
+        };
+
+
     }
 }

@@ -89,5 +89,6 @@ module.exports = {
             },
             errorMessage:'Cpf invalido'
         }
+       
     })
 }
