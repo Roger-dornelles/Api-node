@@ -83,10 +83,17 @@ module.exports = {
     }),
     consult:checkSchema({
         cpf:{
+            optional:true,
             isLength:{
                 options:{min:11}
             },
             errorMessage:'Cpf invalido'
+        },
+        email:{
+            optional:true,
+            isEmail:true,
+            normalizeEmail:true,
+            errorMessage:'E-mail invalido.'
         }
        
     })
