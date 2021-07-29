@@ -45,6 +45,9 @@ module.exports = {
                 options:{min:6}
             },
             errorMessage:'Senha invalida!'
+        },
+        token:{
+            notEmpty:false
         }
     }),
     editAction: checkSchema({

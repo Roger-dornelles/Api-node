@@ -62,7 +62,15 @@ module.exports = {
             return;
         };
 
-        res.json({data});
+        const payload = (Date.now() + Math.random()).toString();
+        const token = await bcrypt.hash(payload,10);
+        if(user.token){
+            user.token = token;
+            
+            await user.save(user.token);
+        }
+
+        res.json({token});
  
    
     },
