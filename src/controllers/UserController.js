@@ -69,8 +69,9 @@ module.exports = {
             
             await user.save(user.token);
         }
+        let name= user.name;
 
-        res.json({token});
+        res.json({token,name});
  
    
     },
