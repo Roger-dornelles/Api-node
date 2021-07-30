@@ -4,8 +4,6 @@ hospedado Heroku:
 
 LINK Heroku:  https://back-end-2.herokuapp.com/
 
-Para teste da api em desenvolvimento foi usado o Rest test test.
-
 
 Criação da Api em Node.js
 
