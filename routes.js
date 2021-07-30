@@ -18,7 +18,7 @@ router.get('/ping',(req,res)=>{
 // rotas da API
 router.post('/user/signup',UserValidator.signup, UserController.signup);
 router.post('/user/signin',UserValidator.signin, UserController.signin);
-router.get('/user/info',Auth.private,UserController.info);
+router.post('/user/info',Auth.private,UserController.info);
 router.put('/user/editAction',UserValidator.editAction, Auth.private, UserController.editAction);
 router.post('/consult',UserValidator.consult,UserController.consult);
 

@@ -77,7 +77,7 @@ module.exports = {
     },
     info:async (req, res)=>{
 
-        let token = req.query.token;
+        let token = req.body.token;
 
         const user = await User.findOne({token});
 
@@ -85,6 +85,7 @@ module.exports = {
             name:user.name,
             email:user.email,
             cpf:user.cpf,
+            password:user.password,
         });
         
         
