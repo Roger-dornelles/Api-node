@@ -1,30 +1,10 @@
-# Api-node  ( EM DESENVOLVIMENTO :-) );
+# Api-node
 
 hospedado Heroku:
 
 LINK Heroku:  https://back-end-2.herokuapp.com/
 
 Para teste da api em desenvolvimento foi usado o Rest test test.
-
-LINK:
-
-https://resttesttest.com/
-
-ROTAS: 
-
-rotas usadas par fazer as requisições:
-
-ROTA DE TESTE:
-router.get('/pong')  // rota para  teste ( retorna => ping:true )
-
-router.post('/user/signup');  //cadastro de usuario
-
-router.post('/user/signin');  // login do usuario
-
-router.get('/user/info');   // buscar informações do usuario
-
-router.put('/user/editAction');  // editar informações do usuario
-
 
 
 Criação da Api em Node.js
@@ -45,6 +25,10 @@ INFORMAÇÔES DO USUARIO:
 
 para verificação dos dados do usuario é visualisada atraves de um token.
 
+CONSULTA:
+
+Função criada para consulta ao banco de dados sobre e-mail e cpf se já esta cadastrados, se estiver cadastrado não autoriza a criação do usuario.
+
 
 ALTERAÇÂO DOS DADOS DO USUARIO:
 
@@ -54,4 +38,3 @@ a alteração dos dados do usuario é atraves de um token e a alterção dos dad
 OBS:
 
 Api criada para ser usada como back-end do clone do app nubank.
-Ainda não foi implementado esta api junto ao projeto APP-NUBANK.
