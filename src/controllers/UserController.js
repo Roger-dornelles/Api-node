@@ -123,7 +123,7 @@ module.exports = {
        }
 
        await User.findOneAndUpdate({token:data.token},{$set:updates});
-       res.json({});
+       res.json({User});
     },
     consult: async (req,res) => {
         const errors = validationResult(req);
