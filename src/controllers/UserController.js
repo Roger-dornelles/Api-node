@@ -98,32 +98,33 @@ module.exports = {
        }
 
        const data = matchedData(req);
-
+       
        let updates = {};
-
+       
        if(data.name){
            updates.name = data.name;
-       }
-
-       if(data.email){
-           const emailCheck = await User.findOne({email:data.email});
-           if(emailCheck){
-               res.json({error:'E-mail já cadastrado.'});
-               return;
-           }
-           updates.email = data.email;
-       };
-
-       if(data.password){
-           updates.password = await bcrypt.hash(data.password,10);
-       };
-
-       if(data.cpf){
-           updates.cpf = data.cpf;
-       }
-
-       await User.findOneAndUpdate({token:data.token},{$set:updates});
-       res.json({User});
+        }
+        
+        if(data.email){
+            const emailCheck = await User.findOne({email:data.email});
+            if(emailCheck){
+                res.json({error:'E-mail já cadastrado.'});
+                return;
+            }
+            updates.email = data.email;
+        };
+        
+        if(data.password){
+            updates.password = await bcrypt.hash(data.password,10);
+        };
+        
+        if(data.cpf){
+            updates.cpf = data.cpf;
+        }
+        
+        await User.findOneAndUpdate({token:data.token},{$set:updates});
+        const user = await User.findOne({token:data.token});
+       res.json({user});
     },
     consult: async (req,res) => {
         const errors = validationResult(req);
